@@ -1,0 +1,23 @@
+﻿<Window x:Class="Task2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="74*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="LoadedFilesListBox" Margin="151,87,105,53"
+                SelectionChanged="LoadedFilesListBox_SelectionChanged" Grid.RowSpan="2"/>
+
+        <Button x:Name="btnChoose" Content="Выбрать файл" HorizontalAlignment="Left" Margin="235,22,0,0" VerticalAlignment="Top" Click="btnChoose_Click"/>
+        <Label Content="Загруженные файлы" Margin="213,58,159,0" VerticalAlignment="Top"/>
+    </Grid>
+
+
+</Window>
